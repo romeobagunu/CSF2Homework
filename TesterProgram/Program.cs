@@ -65,6 +65,25 @@ namespace TesterProgram
 
             #endregion
 
+            #region ContactInfo
+            Console.WriteLine("\n-=-= Contact Information =-=-\n");
+
+            ContactInfo contact1 = new ContactInfo();
+            contact1.StreetAddress = "15937 Forest Ave";
+            contact1.City = "Kansas City";
+            contact1.State = "Missouri";
+            contact1.Zip = "64129";
+            contact1.Phone = "816-132-3240";
+            contact1.Email = "jgreensdale@outlook.com";
+
+            Console.WriteLine(contact1);
+
+            ContactInfo contact2 = new ContactInfo("92358 Lincoln St", "Shawnee", "Kansas", "66202", "913-064-8496", "jdoe@outlook.com");
+
+            Console.WriteLine(contact2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
