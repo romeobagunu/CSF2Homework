@@ -29,6 +29,25 @@ namespace TesterProgram
             Console.WriteLine(s2);
             #endregion
 
+            #region Vehicle
+            Console.WriteLine("\n-=-= Vehicle =-=-\n");
+
+            Vehicle v1 = new Vehicle();
+            v1.Make = "Mercedes-Benz";
+            v1.Model = "560SEL";
+            v1.Year = 1987;
+            v1.Weight = 3594f;
+
+            Console.WriteLine(v1);
+
+            Console.WriteLine();
+
+            Vehicle v2 = new Vehicle("Honda", "Accord", 2004, 3038f);
+
+            Console.WriteLine(v2);
+
+            #endregion
+
 
         }//end Main()
     }//end class
