@@ -48,6 +48,22 @@ namespace TesterProgram
 
             #endregion
 
+            #region Login
+            Console.WriteLine("\n-=-= Login =-=-\n");
+
+            Login l1 = new Login();
+            l1.Username = "jgreensdale";
+            l1.Password = "560SEL1987";
+
+            Console.WriteLine(l1);
+
+            Console.WriteLine();
+
+            Login l2 = new Login("jdoe", "Accord2004");
+
+            Console.WriteLine(l2);
+
+            #endregion
 
         }//end Main()
     }//end class
