@@ -99,6 +99,24 @@ namespace TesterProgram
             Console.WriteLine(customer2);
             #endregion
 
+            #region CreditCardAccount
+            Console.WriteLine("\n-=-= Credit Card Accounts =-=-\n");
+
+            CreditCardAccount account1 = new CreditCardAccount();
+            account1.AccountNumber = 5002411;
+            account1.CustomerInfo = customer1;
+            account1.Balance = 1350.23m;
+            account1.IsPastDue = true;
+            account1.AnnualInterestRate = 24.99m;
+
+            Console.WriteLine(account1);
+
+            CreditCardAccount account2 = new CreditCardAccount(5003201, customer2, 240.12m, false, 24.99m);
+
+            Console.WriteLine(account2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace

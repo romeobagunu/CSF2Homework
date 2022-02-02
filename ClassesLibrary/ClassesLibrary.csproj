@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ContactInfo.cs" />
+    <Compile Include="CreditCardAccount.cs" />
     <Compile Include="Customer.cs" />
     <Compile Include="Login.cs" />
     <Compile Include="Student.cs" />
