@@ -117,6 +117,21 @@ namespace TesterProgram
 
             #endregion
 
+            #region Books
+            Console.WriteLine("\n-=-= Books =-=-\n");
+
+            Book b1 = new Book();
+            b1.Title = "Dispensational Truth";
+            b1.Author = "Clarence Larkin";
+            b1.NumberOfPages = 336;
+
+            Console.WriteLine(b1);
+
+            Book b2 = new Book("Rightly Dividing the Word of Truth", "C.I. Scofield", 72);
+
+            Console.WriteLine(b2);
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
