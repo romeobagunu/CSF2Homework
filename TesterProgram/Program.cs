@@ -84,6 +84,21 @@ namespace TesterProgram
 
             #endregion
 
+            #region Customer
+            Console.WriteLine("\n-=-= Customers =-=-\n");
+            Customer customer1 = new Customer();
+            customer1.CustomerID = "JG01";
+            customer1.FirstName = "Jerry";
+            customer1.LastName = "Greensdale";
+            customer1.ContactInformation = contact1;
+
+            Console.WriteLine(customer1);
+
+            Customer customer2 = new Customer("JD02", "John", "Doe", contact2);
+
+            Console.WriteLine(customer2);
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
