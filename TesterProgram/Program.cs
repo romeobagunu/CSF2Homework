@@ -220,6 +220,23 @@ namespace TesterProgram
 
             #endregion
 
+            #region Trucks
+
+            Truck trk1 = new Truck();
+            trk1.Make = "Ford";
+            trk1.Model = "F-150 XL";
+            trk1.Year = 2022;
+            trk1.Weight = 4363f;
+            trk1.LoadCapacityLbs = 3325f;
+
+            Console.WriteLine(trk1);
+
+            Truck trk2 = new Truck("Chevrolet", "Silverado 1500", 2022, 4603f, 9200f);
+
+            Console.WriteLine(trk2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
