@@ -203,6 +203,23 @@ namespace TesterProgram
 
             #endregion
 
+            #region Motor Homes
+
+            MotorHome mh1 = new MotorHome();
+            mh1.Make = "Coachmen RV";
+            mh1.Model = "Freelander";
+            mh1.Year = 2021;
+            mh1.Weight = 10156f;
+            mh1.NumberOfBeds = 3;
+
+            Console.WriteLine(mh1);
+
+            MotorHome mh2 = new MotorHome("Winnebago", "Intent 28Y", 2021, 18000f, 1);
+
+            Console.WriteLine(mh2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace

@@ -48,6 +48,7 @@
     <Compile Include="Customer.cs" />
     <Compile Include="Library.cs" />
     <Compile Include="Login.cs" />
+    <Compile Include="MotorHome.cs" />
     <Compile Include="Song.cs" />
     <Compile Include="Student.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
