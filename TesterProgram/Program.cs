@@ -177,6 +177,32 @@ namespace TesterProgram
 
             #endregion
 
+            #region Artists
+
+            List<Song> trackList1 = new List<Song>();
+            trackList1.Add(sng1);
+            trackList1.Add(sng2);
+
+            Artist artist1 = new Artist();
+            artist1.Title = "Kanye West";
+            artist1.Genre = "Hip Hop / Rap";
+            artist1.Tracks = trackList1;
+
+            Console.WriteLine("\n" + artist1);
+
+            Song sng3 = new Song("Pinegrove", "The Alarmist", 242);
+            Song sng4 = new Song("Pinegrove", "Light On", 219);
+
+            List<Song> trackList2 = new List<Song>();
+            trackList2.Add(sng3);
+            trackList2.Add(sng4);
+
+            Artist artist2 = new Artist(trackList2, "Pinegrove", "Indie Rock");
+
+            Console.WriteLine("\n" + artist2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
