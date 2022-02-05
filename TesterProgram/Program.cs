@@ -162,6 +162,21 @@ namespace TesterProgram
 
             #endregion
 
+            #region Songs
+
+            Song sng1 = new Song();
+            sng1.Title = "Slave Name";
+            sng1.Artist = "Kanye West ft. Ant Clemons";
+            sng1.LengthInSeconds = 243;
+
+            Console.WriteLine(sng1);
+
+            Song sng2 = new Song("Kanye West ft. Ant Clemons", "Hurricane", 165);
+
+            Console.WriteLine(sng2);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
