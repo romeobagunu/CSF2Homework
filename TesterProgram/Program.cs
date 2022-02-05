@@ -132,6 +132,36 @@ namespace TesterProgram
             Console.WriteLine(b2);
             #endregion
 
+            #region Library
+            Console.WriteLine("\n--==--==** LIBRARY **==--==--\n");
+
+            List<Book> libraryInventory1 = new List<Book>();
+            libraryInventory1.Add(b1);
+            libraryInventory1.Add(b2);
+
+            Library livingFaithLibrary = new Library();
+            livingFaithLibrary.Books = libraryInventory1;
+            livingFaithLibrary.LibraryName = "Living Faith Library";
+            livingFaithLibrary.StreetAddress = "3953 Walnut St";
+            livingFaithLibrary.City = "Kansas City";
+            livingFaithLibrary.State = "MO";
+            livingFaithLibrary.ZIP = "64111";
+
+            Console.WriteLine(livingFaithLibrary);
+
+            Book b3 = new Book("Morning and Evening", "C.H. Spurgeon", 768);
+            Book b4 = new Book("The Treasury of David", "C.H. Spurgeon", 8762);
+
+            List<Book> libraryInventory2 = new List<Book>();
+            libraryInventory2.Add(b3);
+            libraryInventory2.Add(b4);
+
+            Library spurgeonLibrary = new Library(libraryInventory2, "Spurgeon Library", "5001 North Oak Trafficway", "Kansas City", "MO", "64118");
+
+            Console.WriteLine(spurgeonLibrary);
+
+            #endregion
+
         }//end Main()
     }//end class
 }//end namespace
